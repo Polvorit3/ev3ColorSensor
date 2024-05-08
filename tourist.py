@@ -43,12 +43,12 @@ movement_box.wait()
 ev3.screen.print(movement_box.read())
 
 message = movement_box.read()
-array_message = message.split(",")
+array_message = message.split()
 print(array_message, '\n')
 print(len(array_message))
 
 #Move robot
-for i in range(len(array_message), 2):
+for i in range(len(array_message)):
     distance = int(array_message[i])
     angle = int(array_message[i + 1])
 

@@ -66,7 +66,7 @@ while turns < 2: #Turns MAX times
     ev3.screen.print(distance,'\n')
     ev3.screen.print(n,'\n')
 
-    message = message + str(distance) + ',' + str(n) + ','
+    message = message + str(distance) + ' ' + str(n) + ' '
     robot.reset()
 
 
