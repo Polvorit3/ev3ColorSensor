@@ -48,10 +48,10 @@ print(array_message, '\n')
 print(len(array_message))
 
 #Move robot
-for i in range(len(array_message)):
+for i in range(0, len(array_message)-1, 2):
+    print(array_message[i], array_message[i+1])
     distance = int(array_message[i])
-    angle = int(array_message[i + 1])
-
+    angle = int(array_message[i+1])
     robot.drive(SPEED, distance)
     robot.stop()  
     robot.straight(-100)
